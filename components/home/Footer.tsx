@@ -32,35 +32,16 @@ const SectionLink: FC<SectionLinkProps> = ({ name, href }) => (
 
 const developerSectionLinks = [
   {
-    name: 'Docs',
-    href: 'https://docs.reservoir.tools/docs',
+    name: '> knny.io',
+    href: 'https://knny.io',
   },
   {
-    name: 'API Reference',
-    href: 'https://docs.reservoir.tools/reference/overview',
+    name: '> shop posters',
+    href: 'https://knny.io/shop',
   },
   {
-    name: 'Github',
-    href: 'https://github.com/reservoirprotocol',
-  },
-  {
-    name: 'Testnets',
-    href: 'https://testnets.reservoir.tools',
-  },
-]
-
-const companySectionLinks = [
-  {
-    name: 'Jobs',
-    href: 'https://jobs.ashbyhq.com/reservoir',
-  },
-  {
-    name: 'Terms of Use',
-    href: 'https://reservoir.tools/terms',
-  },
-  {
-    name: 'Privacy Policy',
-    href: 'https://reservoir.tools/privacy',
+    name: '> about KNNY',
+    href: 'https://knny.io/about',
   },
 ]
 
@@ -83,28 +64,23 @@ export const Footer = () => {
     >
       <Flex css={{ gap: 80, '@bp600': { gap: 136 } }}>
         <Flex direction="column">
-          <SectionTitle title="Developers" />
+          <SectionTitle title="more places" />
           {developerSectionLinks.map((props) => (
             <SectionLink key={props.name} {...props} />
           ))}
         </Flex>
-        <Flex direction="column">
-          <SectionTitle title="Company" />
-          {companySectionLinks.map((props) => (
-            <SectionLink key={props.name} {...props} />
-          ))}
-        </Flex>
+
       </Flex>
       <Flex
         direction="column"
         css={{ alignItems: 'flex-start', '@bp600': { alignItems: 'flex-end' } }}
       >
-        <SectionTitle title="Join Reservoir Community" />
+        <SectionTitle title="follow me on twitter" />
         <Flex css={{ gap: '$4', mt: 16 }}>
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://twitter.com/reservoir0x"
+            href="https://twitter.com/0xknny"
           >
             <Button size="xs" color="gray3">
               <FontAwesomeIcon icon={faTwitter} width={14} height={14} />

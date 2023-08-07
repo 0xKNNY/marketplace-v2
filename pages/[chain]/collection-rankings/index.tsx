@@ -30,6 +30,7 @@ import ChainToggle from 'components/common/ChainToggle'
 import { Head } from 'components/Head'
 import { ChainContext } from 'context/ChainContextProvider'
 import { useRouter } from 'next/router'
+import { Footer } from 'components/home/Footer'
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>
 
@@ -131,7 +132,7 @@ const IndexPage: NextPage<Props> = ({ ssr }) => {
             }}
           >
             <Text style="h4" as="h4">
-              Collection Rankings
+              KNNY's Minted Collections
             </Text>
             <Flex align="center" css={{ gap: '$4' }}>
               <CollectionsTimeDropdown
@@ -163,10 +164,14 @@ const IndexPage: NextPage<Props> = ({ ssr }) => {
             <LoadingSpinner />
           </Flex>
         )}
+                <Footer />
+
       </Box>
     </Layout>
+    
   )
 }
+
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {

@@ -48,7 +48,7 @@ const Navbar = () => {
         width: '100%',
         borderBottom: '1px solid $gray4',
         zIndex: 999,
-        background: '$slate1',
+        background: '#000000',
         position: 'fixed',
         top: 0,
         left: 0,
@@ -59,13 +59,13 @@ const Navbar = () => {
     >
       <Box css={{ flex: 1 }}>
         <Flex align="center">
-          <Link href={`/${routePrefix}`}>
+          <Link href={`/${routePrefix}/collection-rankings`}>
             <Box css={{ width: 34, cursor: 'pointer' }}>
               <Image
-                src="/reservoirLogo.svg"
-                width={34}
-                height={39}
-                alt="Reservoir"
+                src="/face.jpeg"
+                width={50}
+                height={50}
+                alt="KNNY"
               />
             </Box>
           </Link>
@@ -98,21 +98,21 @@ const Navbar = () => {
     >
       <Box css={{ flex: 1 }}>
         <Flex align="center">
-          <Link href={`/${routePrefix}`}>
+          <Link href={`/${routePrefix}/collection-rankings`}>
             <Box css={{ width: 112, cursor: 'pointer' }}>
               {theme == 'dark' ? (
                 <Image
-                  src="/reservoirMarketLogo.svg"
-                  width={112}
-                  height={36}
-                  alt="Reservoir"
+                  src="/face.jpeg"
+                  width={50}
+                  height={50}
+                  alt="KNNY"
                 />
               ) : (
                 <Image
-                  src="/reservoirMarketLogoLight.svg"
-                  width={112}
-                  height={36}
-                  alt="Reservoir"
+                  src="/face.jpeg"
+                  width={50}
+                  height={50}
+                  alt="KNNY"
                 />
               )}
             </Box>
@@ -120,7 +120,7 @@ const Navbar = () => {
           <Box css={{ flex: 1, px: '$5', maxWidth: 600 }}>
             <GlobalSearch
               ref={searchRef}
-              placeholder="Search collections and addresses"
+              placeholder="[ search collections ]"
               containerCss={{ width: '100%' }}
               key={router.asPath}
             />
@@ -128,14 +128,14 @@ const Navbar = () => {
           <Flex align="center" css={{ gap: '$5', mr: '$5' }}>
             <Link href={`/${routePrefix}/collection-rankings`}>
               <NavItem active={router.pathname.includes('collection-rankings')}>
-                Collections
+                collections
               </NavItem>
             </Link>
             <Link href="/portfolio">
-              <NavItem active={router.pathname == '/portfolio'}>Sell</NavItem>
+              <NavItem active={router.pathname == '/portfolio'}>sell</NavItem>
             </Link>
-            <Link href="https://docs.reservoir.tools/docs">
-              <NavItem active={false}>Docs</NavItem>
+            <Link href="https://docs.reservoir.tools/reference/open-source-marketplace">
+              <NavItem active={false}>deploy your own market</NavItem>
             </Link>
           </Flex>
         </Flex>

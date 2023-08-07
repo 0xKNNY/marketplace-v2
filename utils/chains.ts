@@ -160,6 +160,7 @@ export const DefaultChain: ReservoirChain = {
 
 export default [
   DefaultChain,
+  /*
   {
     ...polygon,
     lightIconUrl: '/icons/polygon-icon-dark.svg',
@@ -256,5 +257,5 @@ export default [
     coingeckoId: 'ethereum',
     collectionSetId: process.env.NEXT_PUBLIC_LINEA_COLLECTION_SET_ID,
     community: process.env.NEXT_PUBLIC_LINEA_COMMUNITY,
-  },
+  },*/
 ] as ReservoirChain[]

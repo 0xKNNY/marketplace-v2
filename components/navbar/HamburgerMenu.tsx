@@ -59,11 +59,11 @@ const HamburgerMenu = () => {
           justify="between"
         >
           <Link href="/">
-            <Box css={{ width: 34, cursor: 'pointer' }}>
+            <Box css={{ width: 50, cursor: 'pointer' }}>
               <Image
-                src="/reservoirLogo.svg"
-                width={34}
-                height={39}
+                src="/face.jpeg"
+                width={50}
+                height={50}
                 alt="Reservoir"
               />
             </Box>
@@ -131,7 +131,7 @@ const HamburgerMenu = () => {
                   pt: '24px',
                 }}
               >
-                Explore
+                explore
               </Text>
             </Link>
             <Link href="/portfolio" legacyBehavior>
@@ -144,7 +144,7 @@ const HamburgerMenu = () => {
                   pt: '24px',
                 }}
               >
-                Sell
+                sell
               </Text>
             </Link>
             <Link href="/portfolio" legacyBehavior>
@@ -158,11 +158,24 @@ const HamburgerMenu = () => {
                   gap: '$1',
                 }}
               >
-                <Text style="subtitle1">Portfolio</Text>
+                <Text style="subtitle1">portfolio</Text>
                 <Text style="body3" color="subtle">
                   Manage your items, collections, listings and offers
                 </Text>
               </Flex>
+            </Link>
+            <Link href="https://docs.reservoir.tools/reference/open-source-marketplace" legacyBehavior>
+              <Text
+                style="subtitle1"
+                css={{
+                  borderBottom: '1px solid $gray4',
+                  cursor: 'pointer',
+                  pb: '$4',
+                  pt: '24px',
+                }}
+              >
+                deploy your own market
+              </Text>
             </Link>
             <Wallet />
             <Flex
@@ -260,7 +273,7 @@ const HamburgerMenu = () => {
             borderTop: '1px solid $gray4',
           }}
         >
-          <a href="https://twitter.com/reservoir0x" target="_blank">
+          <a href="https://twitter.com/0xknny" target="_blank">
             <Button
               css={{ justifyContent: 'center', width: '44px', height: '44px' }}
               type="button"

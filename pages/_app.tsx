@@ -4,7 +4,7 @@ import AnalyticsProvider, {
 initializeAnalytics()
 import ErrorTrackingProvider from 'components/ErrorTrackingProvider'
 
-import { Inter } from '@next/font/google'
+import { IBM_Plex_Mono, Inter, JetBrains_Mono } from '@next/font/google'
 import type { AppContext, AppProps } from 'next/app'
 import { default as NextApp } from 'next/app'
 import { ThemeProvider, useTheme } from 'next-themes'
@@ -39,8 +39,9 @@ import ReferralContextProvider, {
 } from 'context/ReferralContextProvider'
 
 //CONFIGURABLE: Use nextjs to load your own custom font: https://nextjs.org/docs/basic-features/font-optimization
-const inter = Inter({
+const inter = IBM_Plex_Mono({
   subsets: ['latin'],
+  weight:'500',
 })
 
 export const NORMALIZE_ROYALTIES = process.env.NEXT_PUBLIC_NORMALIZE_ROYALTIES

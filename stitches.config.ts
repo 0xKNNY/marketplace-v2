@@ -18,10 +18,11 @@ import {
 import { createStitches } from '@stitches/react'
 import type * as Stitches from '@stitches/react'
 import { reset } from 'utils/css/reset'
-import { Inter } from '@next/font/google'
+import { Fragment_Mono, IBM_Plex_Mono, JetBrains_Mono } from '@next/font/google'
 
-const inter = Inter({
+const inter = IBM_Plex_Mono({
   subsets: ['latin'],
+  weight:['500'],
 })
 
 // CONFIGURABLE: Here you can update all your theming (outside of ReservoirKit which can be configured in the app.tsx)
@@ -291,13 +292,13 @@ export const darkTheme = createTheme({
 
     accent: '#7000FF',
 
-    neutralBgSubtle: '$gray3',
-    neutralBg: '$gray1',
+    neutralBgSubtle: '#000000',
+    neutralBg: '#000000',
 
     panelBg: '$gray3',
     panelBorder: '$slate7',
     panelShadow: 'transparent',
-    dropdownBg: '$gray3',
+    dropdownBg: '#000000',
     sidebarOverlay: 'black',
   },
 })
